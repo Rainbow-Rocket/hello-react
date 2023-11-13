@@ -60,10 +60,10 @@ import Content5TImage from "~/正文05 区/导师展示.png"
 import Content5MImage from "~/正文05 区/我们拥有强大且专业的导师 团队更多关于导师介绍可以点击访问。.png"
 import Content5MoreHeroesImage from "~/正文05 区/更多导师.png"
 import Banner1Text from "~/顶部Banner 区/01 Banner/About us.png"
-import Banner1Image from "~/顶部Banner 区/01 Banner/底图01.png"
-import Banner2Image from "~/顶部Banner 区/02 Banner/底图02.png"
+import Banner1Image from "~/顶部Banner 区/01 Banner/底图01.jpg"
+import Banner2Image from "~/顶部Banner 区/02 Banner/底图02.jpg"
 import Banner2Text from "~/顶部Banner 区/02 Banner/联合国实习项目.png"
-import Banner3Image from "~/顶部Banner 区/03 Banner/底图03.png"
+import Banner3Image from "~/顶部Banner 区/03 Banner/底图03.jpg"
 import Banner3Text from "~/顶部Banner 区/03 Banner/模拟联合国.png"
 
 export const assets = {
@@ -146,9 +146,9 @@ export const assets = {
 
   homePage: {
     banners: [
-      { image: Banner1Image, text: Banner1Text, link: "/article/1/1" },
+      { image: Banner1Image, text: Banner1Text, link: "/article/banner/1" },
       { image: Banner2Image, text: Banner2Text, link: "/article/2/1" },
-      { image: Banner3Image, text: Banner3Text, link: "/article/2/2" },
+      { image: Banner3Image, text: Banner3Text, link: "/article/banner/3" },
     ],
     News: {
       title: Content4TImage,
@@ -203,11 +203,9 @@ export const assets = {
   newsPage: {
     children: [
       { name: "主页", children: [{ name: "新闻", children: [{ image: "" }] }] },
-      { name: "事件" },
-      { name: "新闻发布" },
-      { name: "新闻与案例" },
-      { name: "多媒体" },
-      { name: "联系人" },
+      { name: "新闻" },
+      { name: "活动" },
+      { name: "课程" },
     ],
   },
   teachersPage: {

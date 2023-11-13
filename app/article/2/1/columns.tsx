@@ -70,7 +70,7 @@ export const columns: ColumnDef<Payment>[] = [
     header,
   },
   {
-    accessorKey: "实习收获",
+    accessorKey: "应聘对象",
     header,
   },
 ]

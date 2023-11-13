@@ -56,10 +56,10 @@ export default function Page() {
               <Image src={assets.homePage.modules.Teachers.middle} alt={""} className={"w-fit"} />
 
               <div className="w-full flex flex-wrap justify-around gap-4">
-                {assets.general.teachers.slice(0, 6).map((props) => (
+                {assets.general.teachers.slice(0, 4).map((props) => (
                   <HeroInHomePage {...props} key={props.id} />
                 ))}
-                {assets.general.teachers.length > 6 && <MoreHeroes MoreHeroes= {assets.homePage.modules.Teachers.more}/>}
+                {assets.general.teachers.length > 4 && <MoreHeroes MoreHeroes= {assets.homePage.modules.Teachers.more}/>}
               </div>
             </section>
           ),

@@ -23,7 +23,7 @@ export const Banner = () => {
             </AspectRatio>
 
             <div className={"absolute flex flex-col h-full justify-end px-20 py-4 md:py-12 gap-4"}>
-              <Image src={item.text} alt={""} className={"w-fit"} />
+              {/*<Image src={item.text} alt={""} className={"w-fit"} />*/}
               <KnowMoreButton link={item.link} />
             </div>
 
