@@ -77,62 +77,62 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
   return (
     <div className="rounded-md border">
       <div className="flex items-center p-4 gap-2">
-        <Label className={"shrink-0"}>方向：</Label>
-        <Input
-          placeholder="筛选方向（不受控 ref）..."
-          ref={refInputDirection}
-          onChange={() => filterByRef(refInputDirection.current!.value)}
-          className="max-w-sm"
-        />
+      {/*  <Label className={"shrink-0"}>方向：</Label>*/}
+      {/*  <Input*/}
+      {/*    placeholder="筛选方向（不受控 ref）..."*/}
+      {/*    ref={refInputDirection}*/}
+      {/*    onChange={() => filterByRef(refInputDirection.current!.value)}*/}
+      {/*    className="max-w-sm"*/}
+      {/*  />*/}
 
-        <Input
-          placeholder="筛选方向（受控 state）..."
-          value={value}
-          onChange={(event) => {
-            filterByState(event.target.value)
-          }}
-          className="max-w-sm"
-        />
+      {/*  <Input*/}
+      {/*    placeholder="筛选方向（受控 state）..."*/}
+      {/*    value={value}*/}
+      {/*    onChange={(event) => {*/}
+      {/*      filterByState(event.target.value)*/}
+      {/*    }}*/}
+      {/*    className="max-w-sm"*/}
+      {/*  />*/}
 
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="shrink-0">
-              选择列
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            {table
-              .getAllColumns()
-              .filter((column) => column.getCanHide())
-              .map((column) => {
-                return (
-                  <DropdownMenuCheckboxItem
-                    key={column.id}
-                    className="capitalize"
-                    checked={column.getIsVisible()}
-                    onCheckedChange={(value) => column.toggleVisibility(!!value)}
-                  >
-                    {column.id}
-                  </DropdownMenuCheckboxItem>
-                )
-              })}
-          </DropdownMenuContent>
-        </DropdownMenu>
+      {/*  <DropdownMenu>*/}
+      {/*    <DropdownMenuTrigger asChild>*/}
+      {/*      <Button variant="outline" className="shrink-0">*/}
+      {/*        选择列*/}
+      {/*      </Button>*/}
+      {/*    </DropdownMenuTrigger>*/}
+      {/*    <DropdownMenuContent align="end">*/}
+      {/*      {table*/}
+      {/*        .getAllColumns()*/}
+      {/*        .filter((column) => column.getCanHide())*/}
+      {/*        .map((column) => {*/}
+      {/*          return (*/}
+      {/*            <DropdownMenuCheckboxItem*/}
+      {/*              key={column.id}*/}
+      {/*              className="capitalize"*/}
+      {/*              checked={column.getIsVisible()}*/}
+      {/*              onCheckedChange={(value) => column.toggleVisibility(!!value)}*/}
+      {/*            >*/}
+      {/*              {column.id}*/}
+      {/*            </DropdownMenuCheckboxItem>*/}
+      {/*          )*/}
+      {/*        })}*/}
+      {/*    </DropdownMenuContent>*/}
+      {/*  </DropdownMenu>*/}
 
-        <Button className={"shrink-0"} variant={"outline"} onClick={clearByRef}>
-          清空（ref）
-        </Button>
-        <Button className={"shrink-0"} variant={"outline"} onClick={clearByState}>
-          清空（state）
-        </Button>
-        <Button className={"shrink-0"} variant={"outline"} onClick={clearByTable}>
-          清空（table）
-        </Button>
-      </div>
+      {/*  <Button className={"shrink-0"} variant={"outline"} onClick={clearByRef}>*/}
+      {/*    清空（ref）*/}
+      {/*  </Button>*/}
+      {/*  <Button className={"shrink-0"} variant={"outline"} onClick={clearByState}>*/}
+      {/*    清空（state）*/}
+      {/*  </Button>*/}
+      {/*  <Button className={"shrink-0"} variant={"outline"} onClick={clearByTable}>*/}
+      {/*    清空（table）*/}
+      {/*  </Button>*/}
+      {/*</div>*/}
 
       {/*<div className="flex-1 text-sm text-muted-foreground">*/}
       {/*  {table.getFilteredSelectedRowModel().rows.length} of {table.getFilteredRowModel().rows.length} row(s) selected.*/}
-      {/*</div>*/}
+      </div>
 
       <Table>
         <TableHeader>
@@ -169,10 +169,10 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
 
       <div className="flex items-center justify-end space-x-2 p-4">
         <Button variant="outline" size="sm" onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()}>
-          Previous
+          前一页
         </Button>
         <Button variant="outline" size="sm" onClick={() => table.nextPage()} disabled={!table.getCanNextPage()}>
-          Next
+          后一页
         </Button>
       </div>
     </div>

@@ -50,7 +50,7 @@ export const MoreHeroes = ({MoreHeroes}) => {
         <Image src={MoreHeroes} alt="More Teachers" fill sizes={"width:160px;"} />
       </AspectRatio>
       <span className={"absolute inset-0 top-20 w-full h-full flex items-start justify-center text-white font-medium text-[24px]"}>
-            更多导师
+            更多专家
       </span>
     </Link>
   )

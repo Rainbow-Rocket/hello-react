@@ -109,7 +109,7 @@ export const assets = {
           ],
         },
         {
-          name: "NEWS",
+          name: "新闻",
           left: Nav3_Left,
           children: null,
         },
