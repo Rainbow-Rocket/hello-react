@@ -124,19 +124,34 @@ export const assets = {
             },
             {
               name: "联合国地方经济发展局",
-              image: Nav4_3Bg,
+              image: Nav4_2Bg,
               fg: Nav4_3Fg,
             },
             {
               name: "联合国南南合作发展与创新处",
-              image: Nav4_3Bg,
+              image: Nav4_2Bg,
               fg: Nav4_3Fg,
             },
-            // {
-            //   name: "test",
-            //   image: Nav4_3Bg,
-            //   fg: Nav4_3Fg
-            // },
+            {
+              name: "联合国训练研究所",
+              image: Nav4_2Bg,
+              fg: Nav4_2Fg,
+            },
+            {
+              name: "联合国大学",
+              image: Nav4_2Bg,
+              fg: Nav4_2Fg,
+            },
+            {
+              name: "联合国儿童基金会",
+              image: Nav4_2Bg,
+              fg: Nav4_2Fg,
+            },
+            {
+              name: "国际劳工组织",
+              image: Nav4_2Bg,
+              fg: Nav4_2Fg,
+            }
           ],
         },
       ],

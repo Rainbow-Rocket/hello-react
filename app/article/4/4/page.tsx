@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const VerticalTabs = () => (
-  <Tabs defaultValue="one" className="flex gap-2">
+  <Tabs defaultValue="four" className="flex gap-2">
     <TabsList className="flex flex-col gap-2 h-fit">
       <TabsTrigger value="one">联合国KIP国际学院</TabsTrigger>
       <TabsTrigger value="two">联合国地方经济发展局</TabsTrigger>

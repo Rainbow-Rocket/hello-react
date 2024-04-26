@@ -25,7 +25,7 @@ at https://zsy2.cs-magic.cn
 ## project structure
 
 - 静态资源
-  - 说明：在 `public/core` 下，是舒昱一开始发我的文件夹 `CREGU官网首页测试开发切片` 的变体，主要做了一些文件名对齐工作，以及补充了一些其他资源
+  - 说明：在 `public/core` 下，是一开始发我的文件夹 `CREGU官网首页测试开发切片` 的变体，主要做了一些文件名对齐工作，以及补充了一些其他资源
   - 导入：在 `config/assets.ts` 里统一静态导入，方便 SSR 处理
 - 静态文档
   - 源文档：需求详细描述, https://www.yuque.com/zhangshuyu-hkq8d/bfe2gh/ioldqv4ewt590nw4#eq9JL
