@@ -102,7 +102,27 @@ export const assets = {
               fg: Nav2_1Fg,
             },
             {
-              name: "模拟联合国",
+              name: "联合国组织线上论坛",
+              image: Nav2_2Bg,
+              fg: Nav2_2Fg,
+            },
+            {
+              name: "联合国组织参访",
+              image: Nav2_2Bg,
+              fg: Nav2_2Fg,
+            },
+            {
+              name: "联合国大学学分项目",
+              image: Nav2_2Bg,
+              fg: Nav2_2Fg,
+            },
+            {
+              name: "意大利研学",
+              image: Nav2_2Bg,
+              fg: Nav2_2Fg,
+            },
+            {
+              name: "SDGs&ESG课程",
               image: Nav2_2Bg,
               fg: Nav2_2Fg,
             },

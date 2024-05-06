@@ -87,6 +87,32 @@
 
 }
 
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-semibold;
+}
+
+:root .prose {
+  --tw-prose-body: #333;
+  --tw-prose-headings: #000;
+  --tw-prose-lead: #000;
+  --tw-prose-links: #000;
+  --tw-prose-bold: #000;
+  --tw-prose-counters: #000;
+  --tw-prose-bullets: #000;
+  --tw-prose-hr: #000;
+  --tw-prose-quotes: #000;
+  --tw-prose-quote-borders: #000;
+  --tw-prose-captions: #000;
+  --tw-prose-code: #000;
+  --tw-prose-pre-code: #fff;
+  --tw-prose-pre-bg: #000;
+  --tw-prose-th-borders: #000;
+  --tw-prose-td-borders: #000;
+}
 
 /* ref: https://stackoverflow.com/a/13184714/9422455 */
 a.anchor {
