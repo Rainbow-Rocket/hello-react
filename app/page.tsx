@@ -1,4 +1,5 @@
 import { NewsList } from "@/app/news-list"
+import { ActivitiesList } from "@/app/activities-list"
 import {HeroInHomePage, MoreHeroes} from "@/components/Hero"
 import { CardComp, KnowMoreButton } from "@/components/card"
 import { CenterContainer } from "@/components/container"
@@ -38,7 +39,7 @@ export default function Page() {
               <CardComp {...assets.homePage.modules.More} pos={"inner-left-top"} />
             </section>
           ),
-          // 4. 新闻
+          // 4. 新闻和活动
           () => (
             <section id={"content-4"} className={"grid grid-cols-1 gap-4"}>
               <Image src={assets.homePage.News.title} alt={""} className={"w-fit"} />
@@ -46,6 +47,10 @@ export default function Page() {
 
               <div className={"flex gap-2 flex-wrap"}>
                 <NewsList limit={2} hasMore />
+              </div>
+              
+              <div className={"mt-8 flex gap-2 flex-wrap"}>
+                <ActivitiesList limit={2} />
               </div>
             </section>
           ),

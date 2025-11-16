@@ -240,7 +240,6 @@ export const assets = {
       { name: "主页", children: [{ name: "新闻", children: [{ image: "" }] }] },
       { name: "新闻" },
       { name: "活动" },
-      { name: "课程" },
     ],
   },
   teachersPage: {
