@@ -34,7 +34,7 @@ export const ActivitiesList = ({
   ].slice(0, limit)
 
   return (
-    <div className={clsx("w-full gap-2 grid grid-cols-1 sm:grid-cols-3", className)} {...props}>
+    <div className={clsx("w-full gap-2 grid grid-cols-1 sm:grid-cols-3 max-w-full", className)} {...props}>
       {activities.map((item, index) => {
         // 如果当前在 /news 页面且标签是"活动"，则链接包含返回参数
         const href = isFromNewsPage && currentTab === "活动"

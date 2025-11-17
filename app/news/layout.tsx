@@ -4,5 +4,5 @@ import { CenterContainer } from "@/components/container"
 import { PropsWithChildren } from "react"
 
 export default function News({ children }: PropsWithChildren) {
-  return <CenterContainer className={"px-[15%] pt-[5%]"}>{children}</CenterContainer>
+  return <CenterContainer className={"px-4 md:px-[15%] pt-[5%]"}>{children}</CenterContainer>
 }

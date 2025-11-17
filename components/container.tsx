@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils"
 import React, { HTMLAttributes, HTMLProps, PropsWithChildren } from "react"
 
 export const CenterContainer = ({ children, className, ...props }: PropsWithChildren & HTMLAttributes<HTMLDivElement>) => (
-  <section className={cn("w-full grid items-center gap-6 pb-8 ", CENTER_LIMITER_CLASS, className)} {...props}>
+  <section className={cn("w-full grid items-center gap-6 pb-8 max-w-full overflow-x-hidden", CENTER_LIMITER_CLASS, className)} {...props}>
     {children}
   </section>
 )

@@ -37,9 +37,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <div className="relative flex flex-col items-center">
+            <div className="relative flex flex-col items-center w-full max-w-full overflow-x-hidden">
               <SiteHeader />
-              <div className="w-full flex-1">{children}</div>
+              <div className="w-full flex-1 max-w-full overflow-x-hidden">{children}</div>
 
               <div className={"w-full bg-primary"}></div>
             </div>

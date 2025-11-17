@@ -31,9 +31,9 @@ export const NewsList = ({
   ].slice(0, limit)
 
   return (
-    <div className={clsx("w-full gap-2 grid grid-cols-1 sm:grid-cols-3", className)} {...props}>
+    <div className={clsx("w-full gap-2 grid grid-cols-1 sm:grid-cols-3 max-w-full", className)} {...props}>
       {news.map((item, index) => (
-        <Link href={`/article/news/${index + 1}`} className={"flex flex-col gap-2 items-center"}>
+        <Link href={`/article/news/${index + 1}`} className={"flex flex-col gap-2 items-center max-w-full"} key={index}>
           <div className="relative w-full aspect-[16/10] overflow-hidden rounded-md">
             <Image 
               src={item.image} 
@@ -49,11 +49,21 @@ export const NewsList = ({
       ))}
 
       {hasMore && (
-        <Link className={"relative w-fit h-fit"} href={"/news"}>
-          <Image src={Content4B3Image} alt={""} width={320} height={200} />
-          <span className={"absolute inset-0 w-full h-full flex items-center justify-center text-white font-medium text-[24px]"}>
-            更多新闻
-          </span>
+        <Link href={"/news"} className={"flex flex-col gap-2 items-center max-w-full"}>
+          <div className="relative w-full aspect-[16/10] overflow-hidden rounded-md">
+            <Image 
+              src={Content4B3Image} 
+              alt={""} 
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 320px"
+            />
+            <div className={"absolute inset-0 w-full h-full flex items-center justify-center bg-black/30"}>
+              <span className={"text-white font-medium text-[24px]"}>
+                更多新闻
+              </span>
+            </div>
+          </div>
         </Link>
       )}
     </div>

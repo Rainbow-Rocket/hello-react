@@ -33,10 +33,10 @@ export default function News() {
   }
 
   return (
-    <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
-      <TabsList className={"w-full justify-start"}>
+    <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full max-w-full overflow-x-hidden">
+      <TabsList className={"w-full justify-start overflow-x-auto"}>
         {assets.newsPage.children.map((tab) => (
-          <TabsTrigger key={tab.name} value={tab.name}>{tab.name}</TabsTrigger>
+          <TabsTrigger key={tab.name} value={tab.name} className={"whitespace-nowrap"}>{tab.name}</TabsTrigger>
         ))}
       </TabsList>
       <TabsContent value={assets.newsPage.children[0].name} className={"flex flex-col gap-2"}>
